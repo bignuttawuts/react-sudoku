@@ -14,22 +14,4 @@ const Cell = ({ isInitial, number, onChange }) => (
   </div>
 );
 
-// class Cell extends Component {
-//   render() {
-//     return (
-//       <div
-//         onClick={e => {
-//           if (isInitial) {
-//             return;
-//           }
-//           onChange((number + 1) % 5);
-//         }}
-//         className={`cell ${isInitial ? "initial" : ""}`}
-//       >
-//         {number !== 0 && number}
-//       </div>
-//     );
-//   }
-// }
-
 export default Cell;
